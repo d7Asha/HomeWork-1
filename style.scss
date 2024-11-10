@@ -29,6 +29,9 @@ body{
         text-align: left;
         padding-top: 24px;
         max-width: 720px;
+        &-highlight{
+            font-weight: bold;
+        }
     }
     &__button{
         width: 247px;
@@ -37,7 +40,7 @@ body{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 10;
+        gap: 10px;
         padding: 16px 28px 16px 28px;
         flex: none;
         order: 1;
@@ -58,10 +61,6 @@ body{
             cursor: url(IMG/cursor.svg), pointer;
         }
     }
-}
-
-.highlight{
-    font-weight: bold;
 }
 
 .title1{
@@ -144,23 +143,55 @@ body{
         flex-wrap: wrap;
         gap: 32px;
         padding-bottom: 50px;
-        
+        &-part{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
     }
-}
-
-.part{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-.size1{
-    height: 473px;
-}
-.size2{
-    height: 512px;
-}
-.size3{
-    height: 551px;
+    &-star{
+        position: absolute;
+        width: 584.72px;
+        height: 584.72px;
+        left: 933px;
+        top: 945.92px;
+        transform: rotate(-6.77deg);
+        &-1{
+            position: absolute;
+            left: 27.97px;
+            top: 1590px;
+            transform: rotate(5.45deg);
+        }
+        &-2{
+            position: absolute;
+            left: 45.18px;
+            top: 1642px;
+            transform: rotate(5.45deg);
+        }
+        &-3{
+            position: absolute;
+            left: 1281.33px;
+            top: 2383px;
+            transform: rotate(7.08deg);
+        }
+        &-4{
+            position: absolute;
+            left: 1326.54px;
+            top: 2416px;
+            transform: rotate(5.45deg);
+        }
+        &-5{
+            position: absolute;
+            left: 1319px;
+            top: 5636px;
+        }
+        &-6{
+            position: absolute;
+            left: 1249px;
+            top: 5684px;
+        }
+    }
+    
 }
 
 .game{
@@ -204,6 +235,18 @@ body{
     }
 }
 
+.size{
+    &-1{
+        height: 473px;
+    }
+    &-2{
+        height: 512px;
+    }
+    &-3{
+        height: 551px;
+    }
+}
+
 .star{
     position: absolute;
     width: 1074px;
@@ -211,75 +254,31 @@ body{
     left: 854px;
     top: -333.46px; 
     overflow: hidden;
-}
-
-.star1{
-    position: absolute;
-    left: 63px;
-    top: 94px;
-}
-
-.star2{
-    position: absolute;
-    left: 156px;
-    top: 69px;
-}
-
-.star3{
-    position: absolute;
-    left: 948px;
-    top: 538px;
-}
-
-.star4{
-    position: absolute;
-    left: 1013px;
-    top: 568px;
-}
-
-.info-star{
-    position: absolute;
-    width: 584.72px;
-    height: 584.72px;
-    left: 933px;
-    top: 945.92px;
-    transform: rotate(-6.77deg);
+    &-1{
+        position: absolute;
+        left: 63px;
+        top: 94px;
+    }
     
+    &-2{
+        position: absolute;
+        left: 156px;
+        top: 69px;
+    }
+    
+    &-3{
+        position: absolute;
+        left: 948px;
+        top: 538px;
+    }
+    
+    &-4{
+        position: absolute;
+        left: 1013px;
+        top: 568px;
+    }
 }
-.info-star1{
-    position: absolute;
-    left: 27.97px;
-    top: 1590px;
-    transform: rotate(5.45deg);
-}
-.info-star2{
-    position: absolute;
-    left: 45.18px;
-    top: 1642px;
-    transform: rotate(5.45deg);
-}
-.info-star3{
-    position: absolute;
-    left: 1281.33px;
-    top: 2383px;
-    transform: rotate(7.08deg);
-}
-.info-star4{
-    position: absolute;
-    left: 1326.54px;
-    top: 2416px;
-    transform: rotate(5.45deg);
-}
-.info-star5{
-    position: absolute;
-    left: 1319px;
-    top: 5636px;
-}
-.info-star6{
-    position: absolute;
-    left: 1249px;
-    top: 5684px;
-}
+
 .mini-games{
     background: rgb(32, 32, 39);
     &__info{
