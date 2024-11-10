@@ -15,6 +15,7 @@ body {
 .top {
   height: 710px;
   background: rgb(225, 255, 143);
+  overflow: hidden;
 }
 .top__content {
   padding-top: 196px;
