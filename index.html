@@ -5,71 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="top center">
+    <section class="top center center1">
         <div class="top__content">
+            <img src="IMG/top-star.svg" alt="Star" class="star">
+            <img src="IMG/top-star1.svg" alt="Star1" class="star1">
+            <img src="IMG/top-star2.svg" alt="Star2" class="star2">
+            <img src="IMG/star3.svg" alt="Star3" class="star3">
+            <img src="IMG/star4.svg" alt="Star4" class="star4">
             <h1 class="title1">Добро пожаловать на мой сайт мини-игр</h1>
-            <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</p>
+            <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="highlight">«Поехали!»</span> и <span class="highlight">приступай</span>.</p>
             <button class="top__button">Поехали!</button>
         </div>
-
-        <div class="line">
-            <p>Викторина</p>
-        </div>
-
         
+    </section>
+    <section class="line center">
+        <div class="line__content">
+            <p class="line__content-text">ВИКТОРИНА</p>
+            <img src="IMG/line-star.svg" alt="line-star" class="line__content-img">
+            <p class="line__content-text">УГАДАЙ ЧИСЛО</p>
+            <img src="IMG/line-star.svg" alt="line-star" class="line__content-img">
+            <p class="line__content-text">ПЕРЕВЕРНИ ТЕКСТ</p>
+            <img src="IMG/line-star.svg" alt="line-star" class="line__content-img">
+        </div>
     </section>
     <section class="info center">
         <h2 class="title2">Об играх</h2>
-        <p>В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый. Все игры доступны для пользования.</p>
+        <p class="info__text">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый. Все игры доступны для пользования.</p>
         <div class="info__games">
-            <article class="game">
-                <img src="IMG/game1.jpeg" alt= "Угадай число" class="game__img">
-                <p class="game__number">Игра №1</p>
-                <h3 class="game__name">
-                    Угадай число
-                </h3>
-            </article>
-            <article class="game">
-                <img src="IMG/game2.jpeg" alt= "Простая арифметика" class="game__img">
-                <p class="game__number">Игра №2</p>
-                <h3 class="game__name">
-                    Простая арифметика
-                </h3>
-            </article>
-            <article class="game">
-                <img src="IMG/game3.jpeg" alt= "Переверни текст" class="game__img">
-                <p class="game__number">Игра №3</p>
-                <h3 class="game__name">
-                    Переверни текст
-                </h3>
-            </article>
-            <article class="game">
-                <img src="IMG/game4.jpeg" alt= "Камень, ножницы, бумага" class="game__img">
-                <p class="game__number">Игра №4</p>
-                <h3 class="game__name">
-                    Камень, ножницы, бумага
-                </h3>
-            </article>
-            <article class="game">
-                <img src="IMG/game5.jpeg" alt= "Простая викторина" class="game__img">
-                <p class="game__number">Игра №5</p>
-                <h3 class="game__name">
-                    Простая викторина
-                </h3>
-            </article>
-            <article class="game">
-                <img src="IMG/game6.jpeg" alt= "Угадай число" class="game__img">
-                <p class="game__number">Игра №6</p>
-                <h3 class="game__name">
-                    Генератор случайных цветов
-                </h3>
-            </article>
+            <img src="IMG/info-star.svg" alt="star" class="info-star">
+            <img src="IMG/info-star1.svg" alt="star1" class="info-star1">
+            <img src="IMG/info-star2.svg" alt="star2" class="info-star2">
+            <div class="part">
+                <article class="game size1">
+                    <img src="IMG/game1.svg" alt= "Угадай число" class="game__img">
+                    <p class="game__number">Игра №1</p>
+                    <h3 class="game__name">Угадай число</h3>
+                </article>
+                <article class="game size3">
+                    <img src="IMG/game4.svg" alt= "Камень, ножницы, бумага" class="game__img">
+                    <p class="game__number">Игра №4</p>
+                    <h3 class="game__name">Камень, ножницы, бумага</h3>
+                </article>
+            </div>
+            <div class="part">
+                <article class="game size2">
+                    <img src="IMG/game2.svg" alt= "Простая арифметика" class="game__img">
+                    <p class="game__number">Игра №2</p>
+                    <h3 class="game__name">Простая арифметика</h3>
+                </article>
+                <article class="game size2">
+                    <img src="IMG/game5.svg" alt= "Простая викторина" class="game__img">
+                    <p class="game__number">Игра №5</p>
+                    <h3 class="game__name">Простая викторина</h3>
+                </article>
+            </div>
+            <div class="part">
+                <article class="game size1" style="z-index: 1;">
+                    <img src="IMG/game3.svg" alt= "Переверни текст" class="game__img">
+                    <p class="game__number">Игра №3</p>
+                    <h3 class="game__name">Переверни текст</h3>
+                </article>
+                <article class="game size3">
+                    <img src="IMG/game6.svg" alt= "Угадай число" class="game__img">
+                    <p class="game__number">Игра №6</p>
+                    <h3 class="game__name">Генератор случайных цветов</h3>
+                </article>
+            </div>
         </div>
     </section>
-    <section class="mini-games">
+    <section class="mini-games center">
         <h3 class="title3">Мини-игры</h3>
+        <div class="mini-games__info">
+            <img src="IMG/info-star3.svg" alt="info-star3" class="info-star3">
+            <img src="IMG/info-star4.svg" alt="info-star4" class="info-star4">
+            <article class="mini-game">
+                <div class="mini-game__info left">
+                    <h3 class="mini-game__name">Угадай число</h3>
+                    <p class="mini-game__text">Попробуй угадать случайное число от 1 до 100.</p>
+                    <button class="mini-game__button">Играть!</button>
+                </div>
+                <img src="IMG/game1-2.svg" alt= "Угадай число" class="mini-game__img right">
+            </article>
+            <article class="mini-game">
+                <img src="IMG/game2-2.svg" alt= "Простая арифметика" class="mini-game__img left">
+                <div class="mini-game__info right">
+                    <h3 class="mini-game__name">Простая арифметика</h3>
+                    <p class="mini-game__text">Попробуй решить простые арифметические задачи.</p>
+                    <button class="mini-game__button">Играть!</button>
+                </div>
+            </article>
+            <article class="mini-game">
+                <div class="mini-game__info left">
+                    <h3 class="mini-game__name">Переверни текст</h3>
+                    <p class="mini-game__text">Попробуй ввести текст, который будет перевернут.</p>
+                    <button class="mini-game__button">Играть!</button>                
+                </div>
+                <img src="IMG/game3-2.svg" alt= "Переверни текст" class="mini-game__img right">
+            </article>
+            <article class="mini-game">
+                <img src="IMG/game4-2.svg" alt= "Простая викторина" class="mini-game__img left">
+                <div class="mini-game__info right">
+                    <h3 class="mini-game__name">Простая викторина</h3>
+                    <p class="mini-game__text">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <button class="mini-game__button">Играть!</button>
+                </div>
+            </article>
+            <article class="mini-game">
+                <div class="mini-game__info left">
+                    <h3 class="mini-game__name">Камень, ножницы, бумага</h3>
+                    <p class="mini-game__text">Сыграй в популярную игру против компьютера.</p>
+                    <button class="mini-game__button">Играть!</button>           
+                </div>
+                <img src="IMG/game5-2.svg" alt= "Камень, ножницы, бумага" class="mini-game__img right">
+            </article>
+            <article class="mini-game">
+                <img src="IMG/game6-2.svg" alt= "Угадай число" class="mini-game__img left">
+                <div class="mini-game__info right">
+                    <h3 class="mini-game__name">Генератор случайных цветов</h3>
+                    <p class="mini-game__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <button class="mini-game__button">Играть!</button>
+                </div>
+            </article>   
+            <img src="IMG/info-star5.svg" alt="info-star5" class="info-star5">
+            <img src="IMG/info-star6.svg" alt="info-star6" class="info-star6">
+        </div>
     </section>
+
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
 </body>
 </html>
