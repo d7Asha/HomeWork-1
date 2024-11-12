@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top{
+    position: relative;
+    overflow: hidden;
+    height: 710px;
+    background: rgb(225, 255, 143);
+    &__content{
+        padding-top: 196px;
+        width: 100%;
+    }
+    &__text{
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 24px;
+        max-width: 720px;
+        &-highlight{
+            font-weight: bold;
+        }
+    }
+    &__button{
+        width: 247px;
+        height: 66px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 28px 16px 28px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 48px 0px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        font-family: Montserrat;
+        &:hover{
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            cursor: url(IMG/cursor.svg), pointer;
+        }
+    }
+}
+
+.title1{
+    max-width: 768px;
+    min-height: 156px;
+    color: rgb(32, 32, 39);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+}
+
+.title2{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 94px;
+}
+
+.title3{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    padding-top: 46px;
+}
+
+.line{
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    display: flex;
+    flex-direction: row;
+    gap: 138px;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        gap: 51px;
+        padding-top: 27px;
+        &-text{
+            color: rgb(32, 32, 39);
+            font-size: 30px;
+            font-weight: 700; 
+        }
+        &-img{
+            width: 36px;
+            height: 36px;
+        }
+    }
+    
+}
+
+.info{
+    position: relative;
+    overflow: hidden;
+    background: rgb(32, 32, 39);
+    &__text{
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 24px;
+        width: 788px;
+    }
+    &__games{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 72px;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-bottom: 50px;
+        &-part{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+    &-star{
+        position: absolute;
+        width: 584.72px;
+        height: 584.72px;
+        left: 933px;
+        top: 77px;
+        transform: rotate(-6.77deg);
+        &-1{
+            position: absolute;
+            left: 27.97px;
+            top: 770px;
+            transform: rotate(5.45deg);
+        }
+        &-2{
+            position: absolute;
+            left: 45.18px;
+            top: 822px;
+            transform: rotate(5.45deg);
+        }
+        
+    }
+    
+}
+
+.game{
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+    position: relative;
+    &__number{
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        color: rgb(39, 26, 88);
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        padding: 8px 16px 10px 16px;
+        margin-left: 32px;
+        margin-top: 32px;
+    }
+    &__name{
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 32px;
+        margin-top: 16px;
+        margin-bottom: 36px;
+        max-width: 305px;
+    }
+    &:hover{
+        transform: scale(1.1);
+        z-index: 1;
+        cursor: url(IMG/cursor.svg), pointer;
+    }
+}
+
+.link{
+    text-decoration: none;
+}
+
+.size{
+    &-1{
+        height: 473px;
+    }
+    &-2{
+        height: 512px;
+    }
+    &-3{
+        height: 551px;
+    }
+}
+
+.star{
+    position: absolute;
+    width: 1074px;
+    height: 1130.46px;
+    left: 854px;
+    top: -333.46px; 
+    &-1{
+        position: absolute;
+        left: 63px;
+        top: 94px;
+    }
+    
+    &-2{
+        position: absolute;
+        left: 156px;
+        top: 69px;
+    }
+    
+    &-3{
+        position: absolute;
+        left: 948px;
+        top: 538px;
+    }
+    
+    &-4{
+        position: absolute;
+        left: 1013px;
+        top: 568px;
+    }
+}
+
+.mini-games{
+    position: relative;
+    overflow: hidden;
+    background: rgb(32, 32, 39);
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 72px;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-bottom: 114px;
+    }
+    &-star{
+        &-3{
+            position: absolute;
+            left: 1281.33px;
+            top: 93px;
+            transform: rotate(7.08deg);
+        }
+        &-4{
+            position: absolute;
+            left: 1326.54px;
+            top: 126px;
+            transform: rotate(5.45deg);
+        }
+        &-5{
+            position: absolute;
+            left: 1319px;
+            top: 3366px;
+        }
+        &-6{
+            position: absolute;
+            left: 1249px;
+            top: 3414px;
+        }
+    }
+}
+
+.mini-game{
+    width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 48px;
+        width: 50%;
+    }
+    &__img{
+        width: 600px;
+        height: 500px;
+    }
+    &__name{
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        text-align: left;
+        max-width: 450px;
+    }
+    &__text{
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        max-width: 382px;
+    }
+    &__button{
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        &:hover{
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            cursor: url(IMG/cursor.svg), pointer;
+        }
+    }
+}
+
+.footer{
+    background: rgb(189, 237, 53);
+    height: 150px;
+    &__text{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 61px;
+    }
+}
+
+.game__hand{
+    display: flex;
+    position: absolute;
+    margin-top: 105.92px;
+}
+.hand{
+    padding-left: 140.49px;
+}
+.mini-game__hand-2{
+    display: flex;
+    position: absolute;
+    margin-top: 169.75px;
+}
+.hand-2{
+    padding-left: 825.28px;
+}
