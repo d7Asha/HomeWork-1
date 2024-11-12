@@ -17,9 +17,10 @@ body {
 }
 
 .top {
+  position: relative;
+  overflow: hidden;
   height: 710px;
   background: rgb(225, 255, 143);
-  overflow: hidden;
 }
 .top__content {
   padding-top: 196px;
@@ -125,8 +126,9 @@ body {
 }
 
 .info {
-  background: rgb(32, 32, 39);
+  position: relative;
   overflow: hidden;
+  background: rgb(32, 32, 39);
 }
 .info__text {
   color: rgb(255, 255, 255);
@@ -158,42 +160,20 @@ body {
   width: 584.72px;
   height: 584.72px;
   left: 933px;
-  top: 945.92px;
+  top: 77px;
   transform: rotate(-6.77deg);
 }
 .info-star-1 {
   position: absolute;
   left: 27.97px;
-  top: 1590px;
+  top: 770px;
   transform: rotate(5.45deg);
 }
 .info-star-2 {
   position: absolute;
   left: 45.18px;
-  top: 1642px;
+  top: 822px;
   transform: rotate(5.45deg);
-}
-.info-star-3 {
-  position: absolute;
-  left: 1281.33px;
-  top: 2383px;
-  transform: rotate(7.08deg);
-}
-.info-star-4 {
-  position: absolute;
-  left: 1326.54px;
-  top: 2416px;
-  transform: rotate(5.45deg);
-}
-.info-star-5 {
-  position: absolute;
-  left: 1319px;
-  top: 5636px;
-}
-.info-star-6 {
-  position: absolute;
-  left: 1249px;
-  top: 5684px;
 }
 
 .game {
@@ -257,7 +237,6 @@ body {
   height: 1130.46px;
   left: 854px;
   top: -333.46px;
-  overflow: hidden;
 }
 .star-1 {
   position: absolute;
@@ -281,6 +260,8 @@ body {
 }
 
 .mini-games {
+  position: relative;
+  overflow: hidden;
   background: rgb(32, 32, 39);
 }
 .mini-games__info {
@@ -292,6 +273,28 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   padding-bottom: 114px;
+}
+.mini-games-star-3 {
+  position: absolute;
+  left: 1281.33px;
+  top: 93px;
+  transform: rotate(7.08deg);
+}
+.mini-games-star-4 {
+  position: absolute;
+  left: 1326.54px;
+  top: 126px;
+  transform: rotate(5.45deg);
+}
+.mini-games-star-5 {
+  position: absolute;
+  left: 1319px;
+  top: 3366px;
+}
+.mini-games-star-6 {
+  position: absolute;
+  left: 1249px;
+  top: 3414px;
 }
 
 .mini-game {
@@ -359,4 +362,24 @@ body {
   line-height: 29px;
   text-align: center;
   padding-top: 61px;
+}
+
+.game__hand {
+  display: flex;
+  position: absolute;
+  margin-top: 105.92px;
+}
+
+.hand {
+  padding-left: 140.49px;
+}
+
+.mini-game__hand-2 {
+  display: flex;
+  position: absolute;
+  margin-top: 169.75px;
+}
+
+.hand-2 {
+  padding-left: 825.28px;
 }/*# sourceMappingURL=style.css.map */
